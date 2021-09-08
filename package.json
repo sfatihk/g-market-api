@@ -1,0 +1,23 @@
+{
+  "name": "g-market-api",
+  "version": "1.0.0",
+  "description": "Getir Case Study - Json Server Repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfatihk/g-market-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sfatihk/g-market-api/issues"
+  },
+  "homepage": "https://github.com/sfatihk/g-market-api",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}
