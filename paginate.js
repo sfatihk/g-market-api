@@ -20,6 +20,9 @@ const paginate = ({ totalCount = 0, perPage = 16, currentPage = 1 }) => {
       }
     } else if (finishDiff <= 3) {
       startIndex = currentPage - (5 - finishDiff - 1);
+      for (let i = 1; i < 3; i++) {
+        pages.push({ label: i, page: i });
+      }
       pages.push({ label: "...", page: 0 });
       for (let i = 0; i < 5; i++) {
         pages.push({ label: startIndex + i, page: startIndex + i });
