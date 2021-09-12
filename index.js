@@ -78,7 +78,12 @@ router.render = (req, res) => {
         perPage: perPage,
       }),
     },
-    results: { brands: brands, tags: tags, itemTypes, items: items },
+    results: {
+      brands: brands.unshift({ name: "All", count: data.length }),
+      tags: tags.unshift({ name: "All", count: data.length }),
+      itemTypes,
+      items: items,
+    },
   });
 };
 
