@@ -79,8 +79,8 @@ router.render = (req, res) => {
       }),
     },
     results: {
-      brands: brands.unshift({ name: "All", count: data.length }),
-      tags: tags.unshift({ name: "All", count: data.length }),
+      brands: [{ name: "All", count: data.length }, ...brands],
+      tags: [{ name: "All", count: data.length }, ...tags],
       itemTypes,
       items: items,
     },
